@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --var-bg-color: #00154f;
+  --var-letter-color: #f4af1b;
+  --var-input-color: #f2bc94;
+  --var-hover-color: rgb(31, 61, 143);
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Krona One", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--var-bg-color);
+}
+
+.search {
+    background-color: var(--var-bg-color);
+}
+
+.main {
+  background-color: var(--var-input-color);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.login {
+  width: 100px;
+  height: 100px;
+}
+
+.galery {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.galery .photos {
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.galery .photos img {
+  width: 21.9%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--var-bg-color);
+}
