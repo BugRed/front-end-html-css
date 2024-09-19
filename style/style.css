@@ -1,107 +1,121 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
-
 :root {
   --var-bg-color: #00154f;
   --var-letter-color: #f4af1b;
   --var-input-color: #f2bc94;
-  --var-hover-color:rgb(31, 61, 143);
+  --var-hover-color: rgb(31, 61, 143);
   --font-title: "Montserrat", sans-serif;
   --font-text: "Krona One", sans-serif;
 }
 
-* {
+body {
   margin: 0;
+  font-family: var(--font-text);
+  background-color: var(--var-bg-color);
+  color: var(--var-letter-color);
+}
+
+header {
+  background-color: var(--var-bg-color);
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+nav a {
+  color: var(--var-letter-color);
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: var(--font-title);
+}
+
+nav a:hover {
+  color: var(--var-input-color);
+}
+
+input[type="text"] {
+  padding: 5px;
+  background-color: var(--var-letter-color);
+  border: none;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: var(--var-hover-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--var-letter-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Sidebar */
+main nav {
+  flex: 1;
+}
+
+main nav ul {
+  list-style-type: none;
   padding: 0;
 }
 
-body {
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
+main nav ul li {
+  margin: 10px 0;
+}
+
+main nav ul li a {
+  color: var(--var-bg-color);
+  text-decoration: none;
+}
+
+main nav ul li a:hover {
+  color: var(--var-hover-color);
 }
 
 
-.header {
-  display: flex;
-  background-color: var(--var-bg-color);
-  justify-content: space-between;
-  align-items: center;
+.menu_lateral{
+    background-color: var(--var-letter-color);
+    color: var(--var-bg-color);
+}
+.menu_lateral li a:hover{
+  color: #f2bc94;
+}
+
+.updates {
+    background-color: var(--var-letter-color);
+    color: var(--var-bg-color);
 }
 
 .logo {
   width: 100px;
   height: 100px;
-
 }
 
 .login {
-  width: 50px;
-  height: 50px;
-
+  width: 100px;
+  height: 100px;
 }
 
-.menu {
-  background-color: var(--var-letter-color);
-  list-style: none;
-  border: 1px solid #c0c0c0;
-  float: left;
-}
-
-.menu li {
-  position: relative;
-  float: left;
-  border-right: 1px solid #c0c0c0;
-}
-
-.menu li a {
-  color: var(--var-menu-font-color);
-  text-decoration: none;
-  padding: 5px 10px;
-  display: block;
-}
-
-.menu li a:hover {
-  background: var(--var-bg-color);
-  color: var(--var-input-color);
-  -moz-box-shadow: 0 3px 10px 0 #ccc;
-  -webkit-box-shadow: 0 3px 10px 0 #ccc;
-  text-shadow: 0px 0px 5px #fff;
-}
-
-.menu li ul {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  background-color: #fff;
-  display: none;
-}
-
-.menu li:hover ul,
-.menu li.over ul {
-  display: block;
-}
-
-.menu li ul li {
-  border: 1px solid #c0c0c0;
-  display: block;
-  width: 150px;
-}
-
-.main {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aux {
-  border: 1px solid red;
-  background-color: var(--var-input-color);
-  display: flex;
-  flex-direction: column;
-}
+/* Carousel */
 
 .galery {
-  width: 640px;
+  width: 600px;
   height: 300px;
   overflow: hidden;
   border: 1px solid red;
@@ -117,3 +131,39 @@ body {
 .galery .photos img {
   width: 19.9%;
 }
+
+/* Right Column */
+.updates {
+  flex: 1;
+}
+
+.updates h3 {
+  font-family: var(--font-title);
+}
+
+.updates ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.updates ul li {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--var-letter-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .icon-img{
+    height: 30px;
+    width: 30px;
+    padding: 10px 100px 10px 0px;
+}
+
+
