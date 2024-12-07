@@ -1,0 +1,19 @@
+.main-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section-img-about {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-left: 50px;
+  }
+  
+  .img-about {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+  }

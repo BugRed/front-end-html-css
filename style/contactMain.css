@@ -1,0 +1,73 @@
+:root {
+  --var-bg-color: #00154f;
+  --var-letter-color: #f4af1b;
+  --var-input-color: #f2bc94;
+  --var-hover-color: rgb(31, 61, 143);
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Krona One", sans-serif;
+}
+.main-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+.containe-title {
+  position: absolute;
+  margin-left: 150px;
+}
+
+.map {
+  height: 350px;
+  width: 350px;
+  border-radius: 20%;
+}
+
+.container-form {
+  /* border: solid 1px red; */
+  width: 200px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.container-form:last-child {
+  margin: 10px 0 10px 0;
+}
+
+.container-form input[type="text"],
+.container-form input[type="number"],
+.container-form input[type="email"],
+.container-form input[type="password"] {
+  font-size: 16px;
+  border: none;
+  box-shadow: 2px 2px 2px #8e8e8e;
+  background-color: var(--var-letter-color);
+}
+
+.container-form textarea {
+  border: none;
+  box-shadow: 2px 2px 2px #8e8e8e;
+  background-color: var(--var-letter-color);
+}
+
+.container-form textarea {
+  box-shadow: 2px 2px 2px #8e8e8e;
+}
+
+.container-form input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--var-bg-color);
+  background-color: var(--var-letter-color);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: border-radius 0.3s;
+}
+
+.container-form input[type="submit"]:hover {
+  transition: background 0.3s;
+  background-color: var(--var-hover-color);
+}

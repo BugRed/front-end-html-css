@@ -1,107 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./style/reset.min.css">
-    <link rel="stylesheet" href="./style/animation.css">
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aluguinho</title>
+    <link rel="stylesheet" href="./style/reset.min.css" />
+    <link rel="stylesheet" href="./style/animation.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/contactMain.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <!-- Logo -->
-            <div class="div-logo">
-                <a class="navbar-brand" href="#">
-                  <img class="logo" src="./assets/logo.png" alt="Logo" />
-                </a>
-              </div>
-            <!-- Navbar Links -->
-            <div>
-                <a href="./index.html">Home</a>
-                <a href="./contact.html">Contato</a>
-                <a href="./about.html">Sobre</a>
-            </div>
-            <!-- Search Bar -->
-            <div>
-                <input type="text" placeholder="Pesquisar...">
-                <button>Buscar</button>
-            </div>
-            <!-- Login Icon -->
-            <div class="icon-login">
-                <a href="./login.html">
-                  <ion-icon class="login" name="person-circle-outline"></ion-icon>
-                </a>
-              </div>
-        </nav>
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="div-logo">
+          <a class="navbar-brand" href="#">
+            <a href="./index.html"><img class="logo" src="./assets/logo.png" alt="Logo" /></a>
+          </a>
+        </div>
+        <!-- Navbar Links -->
+        <ul class="principal">
+          <li class="emLinha lnk"><a href="index.html">Home</a></li>
+          <li class="emLinha lnk">
+            <a href="carlist.html">Carros mais populares <span>▼</span></a>
+            <ul class="oculto">
+              <li><a class="lnk" href="carlist.html">Renault Kwid</a></li>
+              <li><a class="lnk" href="carlist2.html">Uno Com escada</a></li>
+              <li><a class="lnk" href="carlist3.html">Riquixá</a></li>
+            </ul>
+          </li>
+          <li class="emLinha lnk"><a href="about.html">Sobre</a></li>
+          <li class="emLinha lnk"><a href="contact.html">Contato</a></li>
+        </ul>
+        <!-- Search Bar -->
+        <div class="div-search">
+          <input class="search-inpt" type="text" placeholder="Pesquisar..." />
+          <button class="search-btn">Buscar</button>
+        </div>
+        <!-- Login Icon -->
+        <div class="icon-login">
+          <a href="./login.html">
+            <ion-icon class="login" name="person-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Section -->
-    <main>
-        <!-- Left Column (Sidebar) -->
-        <nav class="menu_lateral">
-            <ul>
-                <li><a href="#">Menu Item 1</a></li>
-                <li><a href="#">Menu Item 2</a></li>
-                <li><a href="#">Menu Item 3</a></li>
-            </ul>
-        </nav>
-
-        <!-- Center Column (Carousel) -->
-        <div class="carrossel">
-            <section class="galery">
-                <div class="photos">
-                  <img src="./assets/foto.png" alt="exemplo 1" />
-                  <img src="./assets/foto2.png" alt="exemplo 2" />
-                  <img src="./assets/foto3.png" alt="exemplo 3" />
-                  <img src="./assets/foto4.png" alt="exemplo 4" />
-                  <img src="./assets/foto.png" alt="exemplo 1" />
-                </div>
-        </div>
-
-        <!-- Right Column (Latest Updates) -->
-        <div class="updates">
-            <h3>Últimas Atualizações</h3>
-            <ul>
-                <li>Atualização 1</li>
-                <li>Atualização 2</li>
-                <li>Atualização 3</li>
-            </ul>
-        </div>
+    <main class="main-contact">
+      <!-- Mapa -->
+      <section class="container-map">
+        <iframe
+        class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405692.2705864984!2d-122.37144588760293!3d37.402344026152235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sVale%20do%20Sil%C3%ADcio%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1733532264250!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <!-- Titulo da Pagina -->
+      <section class="containe-title">
+        <h3 class="s2h3">Contato</h3>
+      </section>
+      <!-- Fomulario -->
+      <section class="container-form">
+        <form action="contact.html" class="form-contact" method="post">
+          <div class="form-content">
+            <label for="nome">Nome:</label><br />
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Seu nome"
+              required
+            />
+          </div>
+          <div class="form-content">
+            <label for="telefone">Telefone:</label><br />
+            <input
+              type="number"
+              name="telefone"
+              id="telefone"
+              placeholder="(00) 0.0000.0000"
+              required
+            />
+          </div>
+          <div class="form-content">
+            <label for="email">E-mail:</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@dominio.com.br"
+              required
+            />
+          </div>
+          <div class="form-content">
+            <label for="senha">Senha:</label><br />
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="••••••••••••••"
+              required
+            />
+          </div>
+          <div class="form-content">
+            <label for="assunto">Assunto:</label><br />
+            <textarea
+              id="assunto"
+              placeholder="Digite seu comentário"
+              rows="7"
+              cols="40"
+            ></textarea>
+          </div>
+          <div class="form-content">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div id="social-links">
-          <a href="https://github.com/BugRed" target="_blank">
-            <ion-icon class="icon-img" name="logo-github"></ion-icon>
-          </a>
-          <a href="https://www.instagram.com/tantofazdjow/" target="_blank">
-            <ion-icon class="icon-img" name="logo-instagram"></ion-icon>
-          </a>
-          <a href="https://..." target="_blank">
-            <ion-icon class="icon-img" name="logo-youtube"></ion-icon>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/adriano-rodrigues-backend/"
-            target="_blank"
-          >
-            <ion-icon class="icon-img" name="logo-linkedin"></ion-icon>
-          </a>
+      <section class="container-footer">
+        <div class="copyright">
+          <p class="copyright-text">Todos os direitos reservados ©</p>
         </div>
-      </footer>
-  
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
-</body>
+      </section>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,72 @@
+:root {
+    --var-bg-color: #00154f;
+    --var-letter-color: #f4af1b;
+    --var-input-color: #f2bc94;
+    --var-hover-color: rgb(31, 61, 143);
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Krona One", sans-serif;
+  }
+
+.main-carlist {
+    display: flex;
+    color: var(--var-letter-color);
+    justify-content: space-evenly;
+
+}
+
+.section-img-car{
+    background-color: var(--var-letter-color);
+    width: 400px;
+    height: 370px;
+    border-radius: 20%;
+    
+}
+
+.img-car {
+    width: 320px;
+    height: 300px;
+    margin: 40px 0px 0px 40px;
+    border-radius: 20%;
+}
+
+.describe-car {
+    background-color: var(--var-letter-color);
+    color: var(--var-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20%;
+    width: 400px;
+}
+
+.name-car {
+    margin: 40px 20px 350px 140px;
+    position: absolute;
+}
+
+.describe-paragraph-car {
+}
+
+.buy-btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: white; 
+    background-color: var(--var-bg-color); 
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    text-decoration: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+}
+
+.buy-btn:hover {
+    background-color: var(--var-hover-color);
+
+}
+
+.div-buy-btn {
+    margin-top: 60px;
+}

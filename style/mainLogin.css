@@ -1,0 +1,68 @@
+:root {
+    --var-bg-color: #00154f;
+    --var-letter-color: #f4af1b;
+    --var-input-color: #f2bc94;
+    --var-hover-color: rgb(31, 61, 143);
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Krona One", sans-serif;
+  }
+
+.div-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-login {
+    font-size: large;
+    background-color: var(--var-letter-color);
+}
+
+.title-login {
+    font-size: larger;
+}
+
+
+.div-buy-btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+.buy-btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: var(--var-bg-color); 
+    background-color: var(--var-letter-color); 
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    text-decoration: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+}
+
+.buy-btn:hover {
+    background-color: var(--var-bg-color);
+
+}
+
+
+.link-icon {
+    text-decoration: none;  /* Remove a sublinha */
+    color: var(--var-letter-color);  /* Define a cor padrão do texto e ícone */
+    font-size: 24px;  /* Ajusta o tamanho do texto e ícone */
+}
+
+.link-icon:hover {
+    color: var(--var-hover-color);  /* Muda a cor do texto e ícone ao passar o mouse */
+}
+
