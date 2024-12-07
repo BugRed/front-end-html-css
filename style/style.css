@@ -166,18 +166,30 @@ main {
   width: 600px;
   height: 300px;
   overflow: hidden;
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
+  border: solid 3px var(--var-bg-color);
+  border-radius: 15%;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .galery .photos {
-  width: 500%;
+  width: 600%;
   animation-name: animacao;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+
 }
 
 .galery .photos img {
-  width: 19.9%;
+  width: 600px;
+  height: 350px;
+  
+  
 }
 
 /* Right Column */
