@@ -20,8 +20,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Duarante essa cadeira aprendemos a estruturar um HTML e CSS. 
-
+Duarante essa cadeira aprendemos a estruturar um HTML e CSS. Decidimos então criar um site de aluguel para carros;
+[LINK PARA O PROJETO](https://bugred.github.io/front-end-html-css/)
+![image](./assets/site-img.png)
 
 ## :memo: Licença
 
